@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: practise-demo
+spec:
+  containers:
+    - image: apache:2.4
+      name: apache
+      ports:
+        - containerPort: 80
+          protocol: TCP
+    - image: nginx:1.23
+      name: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP        
